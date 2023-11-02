@@ -1,6 +1,106 @@
+/* Reset browser all the content */
+/* Importing fonts from \assets\fonts\HankenGrotesk-VariableFont_wght.ttf */
+@font-face {
+    font-family: 'HankenGrotesk';
+    src: url('/assets/fonts/HankenGrotesk-VariableFont_wght.ttf') format('truetype');
+}
+
+body, html{
+    margin: 0;
+    padding: 0;
+    font-family: 'HankenGrotesk', sans-serif;
+    font-size: 18px;
+    background-color:#fff;
+
+}
+.card{
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 1px 5px 10px rgba(0,0,0,0.1);
+ /* Centering the card  */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 700px;
+    height: 500px;
+
+/* dividing into 2 parts */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+}
+
+.card >.result {
+    flex: 1 1 50%;
+    border-radius: 30px;
+    background: linear-gradient(to bottom, hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+    color: hsl(241, 100%, 89%);
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 50%;
+    height: 500px;
+}
+
+.card >.result >.res-title {
+    font-weight: 700;
+    margin-top: 1rem;
+    color: hsl(241, 100%, 89%);
+}
+
+.circle {
+    z-index: 1;
+   /* making Circle */
+    border-radius: 50%;
+    width: 175px;
+    height: 175px;
+    background:linear-gradient(hsla(256, 72%, 46%, 1),hsla(241, 72%, 46%, 0));
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    text-align: center;
+}
+
+.circle-content>span{
+    font-size: 3rem;
+    font-weight: 800;
+    color: #fff;
+    text-align: center;
+
+}
+.remark{
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #fff;
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.res-text{
+    text-align:center;
+    margin: 10px;
+    padding-top: 10px;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+
+.card>.sum {
+    width: 50%;
+    height: 500px;
+}
 
 
 
 
+/* Footer */
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
