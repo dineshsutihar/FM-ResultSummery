@@ -35,7 +35,7 @@ body, html{
 .card >.result {
     flex: 1 1 50%;
     border-radius: 30px;
-    background: linear-gradient(to bottom, hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+    background: linear-gradient(to bottom, hsl(252, 100%, 67%) 15%, hsl(241, 81%, 54%));
     color: hsl(241, 100%, 89%);
     padding: 0;
     margin: 0;
@@ -48,18 +48,17 @@ body, html{
 }
 
 .card >.result >.res-title {
-    font-weight: 700;
+    font-weight: 800;
     margin-top: 1rem;
     color: hsl(241, 100%, 89%);
 }
 
 .circle {
-    z-index: 1;
    /* making Circle */
     border-radius: 50%;
     width: 175px;
     height: 175px;
-    background:linear-gradient(hsla(256, 72%, 46%, 1),hsla(241, 72%, 46%, 0));
+    background:linear-gradient(to bottom,hsl(256, 72%, 46%, 1)  ,hsla(241, 72%, 46%, 0));
     margin-bottom: 15px;
     display: flex;
     flex-direction: column;
@@ -92,12 +91,39 @@ body, html{
     padding-right: 40px;
 }
 
+/* Summary styling */
 
 .card>.sum {
+    flex: 1 1 50%; 
     width: 50%;
     height: 500px;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items:start;
+
+
+}
+.sum>.title {
+    font-weight: 800;
+    margin-top: 1rem;
+    color: black;
+    padding-left: 40px;
+
 }
 
+.content-details>.s-i{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+}
 
 
 
