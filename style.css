@@ -93,7 +93,7 @@ body, html{
 
 /* Summary styling */
 
-.card>.sum {
+.sum {
     flex: 1 1 50%; 
     width: 50%;
     height: 500px;
@@ -101,19 +101,20 @@ body, html{
     margin: 0;
     display: flex;
     flex-direction: column;
-    align-items:start;
+    align-items:flex-start;
+    justify-content: space-evenly;
 
-
+    
 }
-.sum>.title {
+.sum-title {
     font-weight: 800;
-    margin-top: 1rem;
+    /* margin-top: 1rem; */
     color: black;
-    padding-left: 40px;
+    /* padding-left: 40px; */
 
 }
 
-.content-details>.s-i{
+/* .content-details .s-i{
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
@@ -123,9 +124,22 @@ body, html{
     padding-top: 10px;
     padding-bottom: 10px;
 
+} */
+
+/* editing button */
+.btn {
+    
+    background-color: hsl(224, 30%, 27%);
+    width: 100%;
+    color: #fff;
+    padding: 10px 20px;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 700;
+    border-radius: 30px;
+    cursor: pointer;
+
 }
-
-
 
 /* Footer */
 .attribution { font-size: 11px; text-align: center; }
