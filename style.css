@@ -69,19 +69,17 @@ body, html {
     font-size: 1.5rem;
     font-weight: 700;
     color: #fff;
-    margin-top: 1rem;
+
 }
 
 .res-text {
     text-align: center;
-    margin: 10px;
-    padding-top: 10px;
+    margin-bottom: 25px;
     padding-left: 40px;
     padding-right: 40px;
 }
 
 .sum {
-    /* flex: 1 1 50%; */
     width: 50%;
     height: 500px;
     margin: 0;
@@ -138,16 +136,16 @@ body, html {
     height: 20px;
 }
 .s-i-r{
-background-color: hsla(0, 100%, 67%, 0.15);
+background-color: hsla(0, 100%, 67%, 0.1);
 }
 .s-i-m{
-background-color: hsla(39, 100%, 56%, 0.15);
+background-color: hsla(39, 100%, 56%, 0.1);
 }
 .s-i-ve{
-background-color:hsla(166, 100%, 37%, 0.15) ;
+background-color:hsla(166, 100%, 37%, 0.1) ;
 }
 .s-i-v{
-background-color: hsla(234, 85%, 45%, 0.15);
+background-color: hsla(234, 85%, 45%, 0.1);
 }
 
 .card > .result,
