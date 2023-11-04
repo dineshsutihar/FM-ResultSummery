@@ -103,7 +103,8 @@ body, html {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
-    justify-content: space-between;
+    justify-content: space-evenly;
+    /* align-items:start; */
     padding-left: 40px;
     padding-right: 40px;
     /* padding-top: 10px;
@@ -125,6 +126,9 @@ body, html {
     height: 50px;
     
 }
+
+/* Summary Content */
+
 
 /* Button Finished */
 .btn {
