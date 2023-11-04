@@ -97,6 +97,7 @@ body, html {
     text-align: le;
     font-weight: 800;
     color: black;
+    margin-top: 1rem;
 }
 
 .content-details > .s-i {
@@ -104,12 +105,51 @@ body, html {
     flex-direction: row;
     flex-wrap: nowrap;
     justify-content: space-evenly;
-    /* align-items:start; */
-    padding-left: 40px;
-    padding-right: 40px;
-    /* padding-top: 10px;
-    padding-bottom: 10px; */
+    margin-top: 7px;
+    margin-bottom: 7px;
+    margin-left: 40px;
+    margin-right: 75px;
+    border-radius: 8px;
+    text-align: center;
+    font-weight: 500;
+    width: 100%;
 }
+.s-i>.s-i-left {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content:first baseline;
+    align-items: center;
+    width: 60%;
+ 
+}
+
+.s-i-t{
+    text-align: left;
+    margin-left: 5px;
+}
+.s-i-i {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content:left;
+    align-items:flex-start;
+    width: 20px;
+    height: 20px;
+}
+.s-i-r{
+background-color: hsla(0, 100%, 67%, 0.15);
+}
+.s-i-m{
+background-color: hsla(39, 100%, 56%, 0.15);
+}
+.s-i-ve{
+background-color:hsla(166, 100%, 37%, 0.15) ;
+}
+.s-i-v{
+background-color: hsla(234, 85%, 45%, 0.15);
+}
+
 .card > .result,
 .card > .sum {
     display: flex;
