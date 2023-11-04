@@ -24,6 +24,7 @@ body, html {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    line-height: 1.5; 
 }
 
 .card > .result {
@@ -80,7 +81,7 @@ body, html {
 }
 
 .sum {
-    flex: 1 1 50%;
+    /* flex: 1 1 50%; */
     width: 50%;
     height: 500px;
     margin: 0;
@@ -90,9 +91,11 @@ body, html {
     justify-content: space-evenly;
 }
 
-.sum-title {
+.sum-title>h1 {
+    margin: 0;
+    padding:0;
+    text-align: le;
     font-weight: 800;
-    padding-left: 40px;
     color: black;
 }
 
@@ -103,15 +106,29 @@ body, html {
     justify-content: space-between;
     padding-left: 40px;
     padding-right: 40px;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    /* padding-top: 10px;
+    padding-bottom: 10px; */
+}
+.card > .result,
+.card > .sum {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    font-size: 1rem;
+    line-height: 1.5; 
+}
+.btn ,.sum-title, .s-i {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    height: 50px;
+    
 }
 
 /* Button Finished */
 .btn {
     background-color: hsl(224, 30%, 27%);
-    width: 80%;
-    height: 50px;
     color: #fff;
     margin-left: 40px;
     margin-right: 40px;
@@ -120,9 +137,6 @@ body, html {
     font-weight: 700;
     border-radius: 30px;
     cursor: pointer;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 .attribution {
