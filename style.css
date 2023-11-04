@@ -56,6 +56,7 @@ body, html {
     background: linear-gradient(to bottom, hsl(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
     margin-bottom: 15px;
     text-align: center;
+    padding: 13px;
 }
 
 .circle-content > span {
