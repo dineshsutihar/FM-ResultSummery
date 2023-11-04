@@ -111,7 +111,7 @@ body, html {
     flex-direction: row;
     flex-wrap: nowrap;
     justify-content: space-evenly;
-    margin-top: 7px;
+    margin-top: 0;
     margin-bottom: 20px;
     margin-left: 40px;
     margin-right: 75px;
@@ -134,6 +134,14 @@ body, html {
     text-align: left;
     margin-left: 5px;
 }
+.s-i-s{
+    color: hsla(0, 0%, 0%, 0.5);
+    font-weight: 800;
+}
+.s-i-s span{
+    color: hsl(224, 30%, 27%);
+    
+}
 .s-i-i {
     display: flex;
     flex-direction: row;
@@ -154,6 +162,19 @@ background-color:hsla(166, 100%, 37%, 0.1) ;
 }
 .s-i-v{
 background-color: hsla(234, 85%, 45%, 0.1);
+}
+
+.s-i-r .s-i-t{
+    color: hsl(0, 100%, 67%);
+    }
+.s-i-m .s-i-t{
+    color: hsla(39, 100%, 56%);
+}
+.s-i-ve .s-i-t{
+    color:hsl(166, 100%, 37%) ;
+}
+.s-i-v .s-i-t{
+    color: hsl(234, 85%, 45%);
 }
 
 .card > .result,
