@@ -1,64 +1,54 @@
-/* Reset browser all the content */
-/* Importing fonts from \assets\fonts\HankenGrotesk-VariableFont_wght.ttf */
 @font-face {
     font-family: 'HankenGrotesk';
     src: url('/assets/fonts/HankenGrotesk-VariableFont_wght.ttf') format('truetype');
 }
 
-body, html{
+body, html {
     margin: 0;
     padding: 0;
     font-family: 'HankenGrotesk', sans-serif;
     font-size: 18px;
-    background-color:#fff;
-
+    background-color: #fff;
 }
-.card{
+
+.card {
     background-color: #fff;
     border-radius: 5px;
-    box-shadow: 1px 5px 10px rgba(0,0,0,0.1);
- /* Centering the card  */
+    box-shadow: 1px 5px 10px rgba(0, 0, 0, 0.1);
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     width: 700px;
     height: 500px;
-
-/* dividing into 2 parts */
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-
 }
 
-.card >.result {
+.card > .result {
     flex: 1 1 50%;
     border-radius: 30px;
     background: linear-gradient(to bottom, hsl(252, 100%, 67%) 15%, hsl(241, 81%, 54%));
     color: hsl(241, 100%, 89%);
-    padding: 0;
-    margin: 0;
     display: flex;
     flex-direction: column;
     align-items: center;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     width: 50%;
     height: 500px;
 }
 
-.card >.result >.res-title {
+.card > .result > .res-title {
     font-weight: 800;
     margin-top: 1rem;
-    color: hsl(241, 100%, 89%);
 }
 
 .circle {
-   /* making Circle */
     border-radius: 50%;
     width: 175px;
     height: 175px;
-    background:linear-gradient(to bottom,hsl(256, 72%, 46%, 1)  ,hsla(241, 72%, 46%, 0));
+    background: linear-gradient(to bottom, hsl(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
     margin-bottom: 15px;
     display: flex;
     flex-direction: column;
@@ -68,53 +58,45 @@ body, html{
     text-align: center;
 }
 
-.circle-content>span{
+.circle-content > span {
     font-size: 3rem;
     font-weight: 800;
     color: #fff;
-    text-align: center;
-
 }
-.remark{
+
+.remark {
     font-size: 1.5rem;
     font-weight: 700;
     color: #fff;
-    text-align: center;
     margin-top: 1rem;
 }
 
-.res-text{
-    text-align:center;
+.res-text {
+    text-align: center;
     margin: 10px;
     padding-top: 10px;
     padding-left: 40px;
     padding-right: 40px;
 }
 
-/* Summary styling */
-
 .sum {
-    flex: 1 1 50%; 
+    flex: 1 1 50%;
     width: 50%;
     height: 500px;
-    padding: 0;
     margin: 0;
     display: flex;
     flex-direction: column;
-    align-items:flex-start;
+    align-items: flex-start;
     justify-content: space-evenly;
-
-    
 }
+
 .sum-title {
     font-weight: 800;
-    /* margin-top: 1rem; */
+    padding-left: 40px;
     color: black;
-    /* padding-left: 40px; */
-
 }
 
-/* .content-details .s-i{
+.content-details > .s-i {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
@@ -123,24 +105,31 @@ body, html{
     padding-right: 40px;
     padding-top: 10px;
     padding-bottom: 10px;
+}
 
-} */
-
-/* editing button */
+/* Button Finished */
 .btn {
-    
     background-color: hsl(224, 30%, 27%);
-    width: 100%;
+    width: 80%;
+    height: 50px;
     color: #fff;
-    padding: 10px 20px;
+    margin-left: 40px;
+    margin-right: 40px;
     text-align: center;
     font-size: 1rem;
     font-weight: 700;
     border-radius: 30px;
     cursor: pointer;
-
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-/* Footer */
-.attribution { font-size: 11px; text-align: center; }
-.attribution a { color: hsl(228, 45%, 44%); }
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
